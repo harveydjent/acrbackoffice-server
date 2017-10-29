@@ -1,16 +1,10 @@
 {
   "compilerOptions": {
     "allowSyntheticDefaultImports": true,
-    "allowJs": false,
-    "noImplicitAny": false,
-    "lib": [
-      "es6"
-    ],
-    "moduleResolution": "node",
     "module": "commonjs",
     "target": "es6",
-    "outDir": "build",
-    "sourceMap": false
+    "outDir": "build"
   },
-  "include": ["source/**/*"]
+  "include": ["source/**/*"],
+  "exclude": ["node_modules"]
 }

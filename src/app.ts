@@ -14,10 +14,17 @@ class App {
 
         /**
          * GET /ontology/:type
-         *
+         * Retrieve ontology for a given form type
          */
-        router.get('/ontology/:type', (request: Request, response: Response) => {
+        router.get('/form/:type', (request: Request, response: Response) => {
             response.json({ type: request.params.type })
+        });
+
+        /**
+         * POST /form/:type
+         */
+        router.post('/form/:type', (request: Request, response: Response) => {
+            response.json({ type: request.params.type });
         });
 
         this.express.use('/api', router);

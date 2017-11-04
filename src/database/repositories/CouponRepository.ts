@@ -17,15 +17,15 @@ export default class CouponRepository extends Repository {
     }
 
     delete(): Promise<any> {
-        throw new Error("Method not implemented.");
+        throw new Error('Method not implemented.');
     }
 
     insert(): Promise<any> {
-        throw new Error("Method not implemented.");
+        throw new Error('Method not implemented.');
     }
 
     update(): Promise<any> {
-        throw new Error("Method not implemented.");
+        throw new Error('Method not implemented.');
     }
 
 }

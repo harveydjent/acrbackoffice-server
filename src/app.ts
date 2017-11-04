@@ -39,7 +39,7 @@ class App {
          * GET /coupon
          */
         router.get('/coupon', (request: Request, response: Response) => {
-            this.coupons.getAll().then(response.json);
+            this.coupons.getAll().then(coupons => response.json(coupons));
         });
 
         /**
@@ -47,7 +47,7 @@ class App {
          * GET /coupon/:id
          */
         router.get('/coupon/:id', (request: Request, response: Response) => {
-            this.coupons.get(request.params.id).then(response.json);
+            this.coupons.get(request.params.id).then(coupon => response.json(coupon));
         });
 
         this.express.use('/api', router);

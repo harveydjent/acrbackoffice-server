@@ -1,0 +1,51 @@
+{
+  "database": {
+    "client": "AqlClient",
+    "host": "DATABASE_HOST",
+    "port": "DATABASE_PORT",
+    "tables": {
+      "STCPN": {
+        "fields": [
+          { "name": "id", "field": "coupon_no", "identifier": true },
+          "description",
+          "validate_type",
+          "plu_no",
+          "fam_cd1",
+          "fam_cd2",
+          "vendor_no",
+          "subdept_link",
+          "amount_type",
+          "amount",
+          "promo_amount",
+          "itemizers",
+          "hist_code",
+          "form_no",
+          "issue_min_amt",
+          "issue_min_qty",
+          "sav_prt_cd",
+          "start_date_tm",
+          "end_date_tm",
+          "low_cut_amt",
+          "high_cut_amt",
+          "low_cut_qty",
+          "high_cut_qty",
+          "promo_item",
+          "exclusion_itemizers",
+          "form_opt",
+          "embedded",
+          "best_price",
+          "tracking_code",
+          "create_date",
+          "last_update_date",
+          "inv_link_code",
+          "bankinv_no",
+          "cap_amount",
+          "items_required",
+          "trx_usage_limit",
+          "mixmatch",
+          "ispace"
+        ]
+      }
+    }
+  }
+}
